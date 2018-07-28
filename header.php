@@ -34,7 +34,7 @@ if($_SESSION['auth_type']!="Student"){
           <div class="demo-avatar-dropdown">
 			  <!-- logged in user information -->
 			  <?php  if (isset($_SESSION['username'])) : ?>
-		<span style="text-align:center; width:100%">Welcome <br> <strong><?php echo $_SESSION['fullname']; ?></strong></span>
+		<span style="text-align:center; width:100%">Welcome <br> <strong><?php echo $_SESSION['fullname']; ?></strong><br>User Type:<?php echo $_SESSION['auth_type']; ?></span>
 		<?php endif ?>  
           </div>
         </header>

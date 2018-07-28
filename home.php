@@ -116,16 +116,19 @@ $result2 = mysqli_query( $db,$query2);
             <!--Each table column is echoed in to a td cell-->
             <td class="mdl-data-table__cell--non-numeric"><?php echo $row[6]; ?></td>
             <td class="mdl-data-table__cell--non-numeric"><?php echo $row[7]; ?></td>
-            <td class="mdl-data-table__cell--non-numeric"<?php 
+            <td class="mdl-data-table__cell--non-numeric"><span class="mdl-chip"
+            <?php 
             if ($row[8]=="Accepted"){
-                ?> style="color:green"<?php
+                ?> style="background:green;color:white"<?php
             }
             elseif ($row[8]=="Rejected") {
-                ?>style="color:red"<?php
+                ?>style="background:red;color:white"<?php
             }
             else{
-               ?> style="color:blue"<?php
-            }?>><?php echo $row[8]; ?></td>
+               ?> style="background:blue;color:white"<?php
+            }?>
+            
+            ><span class="mdl-chip__text"><?php echo $row[8]; ?></span></span></td>
             <td class="mdl-data-table__cell--non-numeric"><?php echo $row[9]; ?></td>
             <td class="mdl-data-table__cell--non-numeric"><a class="mdl-button" href="app_edit.php?appid=<?php echo $row[0]; ?>&jobid=<?php echo $row[1];?>"><i class="material-icons">edit</i> </a></td>
         </tr>

@@ -39,7 +39,7 @@ else{
       <div class="mdl-layout-spacer"></div>
       <!-- Navigation. We hide it in small screens. -->
       <nav class="mdl-navigation">
-      <a class="mdl-navigation__link"  href="settings.php?page=admin">logout</a>
+      <a class="mdl-navigation__link"  href="settings.php?page=admin">Settings</a>
       
       <?php  if (!empty($_SESSION['username'])){ ?>
       

@@ -42,7 +42,10 @@
 	<form method="post" action="register.php">
 
 		<?php include('errors.php'); ?>
-
+		<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			<input class="mdl-textfield__input" type="text" name="fullname" size="30" value="<?php echo $fullname; ?>">
+			<label class="mdl-textfield__label">Full Name</label>
+		</div>
 		<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
 			<input class="mdl-textfield__input" type="text" name="username" size="30" value="<?php echo $username; ?>">
 			<label class="mdl-textfield__label">Username</label>

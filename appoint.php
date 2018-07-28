@@ -9,9 +9,11 @@
 <div class="mdl-shadow--2dp" style="width:1000px;height:400px;background:white; overflow-y:scroll;overflow-x:hidden;margin-bottom:10px">
 <div style="padding:10px">
 <?php
-    $_SESSION['rid'] = $_GET['resumeid'];
-   if(! empty( $_SESSION['rid'])){
-      $resumeid = $_SESSION['rid']; 
+   
+   if(! empty( $_GET['resumeid'])){
+      $_SESSION['rid'] =$_GET['resumeid']; 
+    }
+    $resumeid =  $_SESSION['rid'];
    if(! $db ) {
       die('Could not connect: ' . mysqli_error());
    }
@@ -113,13 +115,6 @@ else{
    </div>
 </div>
 
-
-<?php 
- } 
- else{
-    //  header('location:home.php');
- }
- ?>
 
 <?php 
     $q_skills = "SELECT * FROM r_skills WHERE resumeid='".$resumeid."'";
@@ -357,6 +352,7 @@ $q_personal_result = mysqli_query( $db,$q_personal);
 <?php include('dec.php') ?>
 </div>
 </div>
+</div>
 
 <div class="mdl-shadow--2dp" style="width:1000px;background:white;">
 <div  class="card-header" style="background:#00b9d8;">Application Authorization</div>
@@ -402,9 +398,7 @@ $q_personal_result = mysqli_query( $db,$q_personal);
             <div class="succ"><?php if (isset($_SESSION['succ'])) {echo $_SESSION['succ']; unset($_SESSION['succ']);} ?></div>
                     <div class="error"><?php if (isset($_SESSION['err'])) {echo $_SESSION['err']; unset($_SESSION['err']);} ?></div>
 
-            </div>
                
-</div>
-</div>
+</div></div>
 
 <?php include('footer.php') ?>

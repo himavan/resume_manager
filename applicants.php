@@ -51,7 +51,22 @@ $result = mysqli_query( $db,$query2);
             <td class="mdl-data-table__cell--non-numeric"><?php echo $row[6]; ?></td>
             <td class="mdl-data-table__cell--non-numeric"><?php echo $row[7]; ?></td>
             <td class="mdl-data-table__cell--non-numeric"><?php echo $row[5]; ?></td>
-            <td class="mdl-data-table__cell--non-numeric"><?php echo $row[8]; ?></td>
+            <td class="mdl-data-table__cell--non-numeric">
+            <span class="mdl-chip"
+            <?php 
+            if ($row[8]=="Accepted"){
+                ?> style="background:green;color:white"<?php
+            }
+            elseif ($row[8]=="Rejected") {
+                ?>style="background:red;color:white"<?php
+            }
+            else{
+               ?> style="background:blue;color:white"<?php
+            }?>
+            
+            ><span class="mdl-chip__text"><?php echo $row[8]; ?></span></span>
+            
+            </td>
             <td class="mdl-data-table__cell--non-numeric"><?php echo $row[9]; ?></td>
             <td class="mdl-data-table__cell--non-numeric"><a class="mdl-button" href="appoint.php?appid=<?php echo $row[0]; ?>&jobid=<?php echo $row[1]; ?>&resumeid=<?php echo $row[2]; ?>"><i class="material-icons">open_in_new</i> </a></td>
             

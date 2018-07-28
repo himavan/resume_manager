@@ -1,5 +1,11 @@
+CREATE DATABASE resumes;
+
+USE resumes;
+
+
 CREATE TABLE `users` (
   `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `fullname` varchar(100) NOT NULL,
   `username` varchar(30) NOT NULL,
   `email` varchar(100) NOT NULL,
   `password` varchar(100) NOT NULL,

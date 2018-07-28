@@ -1,6 +1,6 @@
-# Project Title
+# Resumes and Jobs Application Manager
 
-Resume Manager and Jobs Application Manager
+Students can manage their resumes and job applications using this project. And also HR Manager can post jobs and track job applications
 
 ## Getting Started
 
@@ -55,7 +55,11 @@ Steps to run the projects.
 ```
 
 ```
-4. Now students can manages their resumes and job applications.
+4. Now students can manage their resumes and job applications.
+```
+
+```
+2. And HR Managers can post jobs and track job applications.
 ```
 
 
@@ -66,3 +70,9 @@ Steps to run the projects.
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+
+## Acknowledgments
+
+* Recommended for to use only for educational purpose. 
+* Not ready for production use.

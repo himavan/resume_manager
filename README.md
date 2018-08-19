@@ -1,4 +1,4 @@
-# Resumes and Jobs Application Manager
+# Online Job Application Portal
 
 Students can manage their resumes and job applications using this project. And also HR Manager can post jobs and track job applications
 

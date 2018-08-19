@@ -24,7 +24,7 @@ include('operations.php');
     <div class="mdl-layout__header-row">
     <a class="mdl-layout__drawer-button"  href="<?php  if (!empty($_GET['page'])){ $_SESSION['page'] = $_GET['page'];} echo $_SESSION['page'];?>.php"><i class="material-icons">arrow_back</i></a>
       <!-- Title -->
-      <span class="mdl-layout-title">Resume Manager</span>
+      <span class="mdl-layout-title">Online Job Application Portal</span>
       <!-- Add spacer, to align navigation to the right -->
       <div class="mdl-layout-spacer"></div>
       <!-- Navigation. We hide it in small screens. -->
@@ -106,7 +106,7 @@ include('operations.php');
     </div>
   <footer class="mdl-mini-footer">
   <div class="mdl-mini-footer__left-section">
-    <div class="mdl-logo">Resume Manager</div>
+    <div class="mdl-logo">>Online Job Application Portal</div>
     <ul class="mdl-mini-footer__link-list">
       <li><a href="https://github.com/himavan">Himavan &copy; 2018 </a></li>
       <li><a href="#">Use only for educational purpose</a></li>

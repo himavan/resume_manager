@@ -695,7 +695,7 @@ if (isset($_POST['app_edit'])) {
                     $_SESSION['err'] = "Error Occurred!".mysqli_error($db);
                 }
 		   } else{
-               $appoint="pending";
+               $appoint="Pending";
                $usr=$_SESSION['username'];
                $jid = $_SESSION['editid'];
                $fn=$_SESSION['fullname'];

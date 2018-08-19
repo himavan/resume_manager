@@ -64,7 +64,7 @@ $result = mysqli_query( $db,$query);
 if(mysqli_num_rows($result)==0 ) {
         ?>
 <div class="lbl_text" style="margin:20px 0 10px 20px"> 
-            <a class="mdl-button mdl-button--raised mdl-button--colored rm-btn"   href="apply_jobs.php">Apply</a>
+            <a class="mdl-button mdl-button--raised mdl-button--colored rm-btn"   href="create_resume.php">Create Resume</a>
             </div>
                
         <?php

@@ -6,7 +6,7 @@
     display:none
 }
 </style>
-<div class="mdl-shadow--2dp" style="width:1000px;height:400px;background:white; overflow-y:scroll;overflow-x:hidden;margin-bottom:10px">
+<div class="mdl-shadow--2dp" style="width:1000px;background:white;margin-bottom:10px">
 <div style="padding:10px">
 <?php
    

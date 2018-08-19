@@ -244,3 +244,7 @@ html, body {
 .mdl-mini-footer__left-section{
   max-width:1000px;margin:auto
 }
+
+label .mdl-radio__label{
+  padding-right:15px
+}

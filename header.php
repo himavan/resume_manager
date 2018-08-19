@@ -22,7 +22,7 @@ if($_SESSION['auth_type']!="Student"){
 <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
       <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title" id="pagetitle">Resume Manager</span>
+          <span class="mdl-layout-title" id="pagetitle">Online Job Application Portal</span>
           <div class="mdl-layout-spacer"></div>
         
          
@@ -50,7 +50,7 @@ if($_SESSION['auth_type']!="Student"){
 		<?php endif ?>
 
           <div class="mdl-layout-spacer"></div>
-          <a class="mdl-navigation__link" href="support.php"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">help_outline</i><span class="visuallyhidden">Help</span>Support</a>
+          <a class="mdl-navigation__link" href="support.php?page=home"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">help_outline</i><span class="visuallyhidden">Help</span>Support</a>
         </nav>
       </div>
       <main class="mdl-layout__content mdl-color--grey-100">

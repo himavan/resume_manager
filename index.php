@@ -19,7 +19,7 @@
   <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
       <!-- Title -->
-      <span class="mdl-layout-title">Resume Manager</span>
+      <span class="mdl-layout-title">Online Job Application Portal</span>
       <!-- Add spacer, to align navigation to the right -->
       <div class="mdl-layout-spacer"></div>
       <!-- Navigation. We hide it in small screens. -->
@@ -30,35 +30,26 @@
       </nav>
     </div>
   </header>
+  <style>
+    .index-hide{
+      display:none;
+    }
+  </style>
 
   <main class="mdl-layout__content" style="background:url('images/bg.jpeg'); background-size:cover">
-    <div class="page-content" >
-    <div class="mdl-shadow--3dp" style="width:500px;margin:10px auto;border-radius:5px;overflow:hidden;background:rgba(255,255,255,0.8)">
-    <div style="padding:10px; text-align:center">
-    <h1 style="font-size:30px;font-weight:300;">Welcome to Resume Manager</h1>
-    <p>Manage your resumes</p>
-    <p>Apply for jobs using your resumes </p>
-    
-    </div>
-    
-    <div style="padding:10px; text-align:left">
-    <p  style=" text-align:left">Highlights of this application:
-    <ul>
-      <li>1. You can create multiple resumes to apply for different types of jobs.</li>
-      <li>2. Special admin page to enable access to post jobs for students for HR managers.</li>
-      <li>3. Single Login & Resgister pages for all kinds of users. After login Redirected to user previlaged pages</li>
-      <li>4. Application is developed by Google's Material Design Framework(frontend)</li>
-      <li>5. Application built using PHP(Server) & Mysql(Database)</li>
-      <li>6. Managers can query applicants based on students resume informations. </li>
-    </ul>   </p>
-    </div>
-   
-    </div>
+    <div class="page-content" style="width:1020px;margin:auto">
+      <div style="margin:10px">
+        <div class="mdl-shadow--3dp"><h4 style="padding:20px; font-weight:200;text-align:center">
+        Trending Jobs
+        </h4></div>
+        <?php include('jobs_list.php'); ?>
+        <p><a class="mdl-navigation__link" href="login.php">login to apply</a></p>
+      </div>
     </div>
   </main>
   <footer class="mdl-mini-footer">
   <div class="mdl-mini-footer__left-section">
-    <div class="mdl-logo">Resume Manager</div>
+    <div class="mdl-logo">Online Job Application Portal</div>
     <ul class="mdl-mini-footer__link-list">
       <li><a href="https://github.com/himavan">Himavan &copy; 2018 </a></li>
       <li><a href="#">Use only for educational purpose</a></li>

@@ -1,7 +1,7 @@
 </div>
     <footer class="mdl-mini-footer">
   <div class="mdl-mini-footer__left-section">
-    <div class="mdl-logo">Resume Manager</div>
+    <div class="mdl-logo">Online Job Application Portal</div>
     <ul class="mdl-mini-footer__link-list">
       <li><a href="https://github.com/himavan">Himavan &copy; 2018 </a></li>
       <li><a href="#">Use only for educational purpose</a></li>
